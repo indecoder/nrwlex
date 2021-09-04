@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nrwlex/admin": ["libs/admin/src/index.ts"],
       "@nrwlex/visitor": ["libs/visitor/src/index.ts"]
     }
   },
