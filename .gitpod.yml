@@ -7,7 +7,7 @@ tasks:
     npm i -g nx
     npm install
  
- vscode:
+vscode:
   extensions:
     - nrwl.angular-console
     - loiane.angular-extension-pack
