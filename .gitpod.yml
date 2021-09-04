@@ -3,7 +3,7 @@ image:
 
 tasks:
 - command: |
-    npm i -g @angular/cli --silent
+    echo n | npm i -g @angular/cli --silent
     npm i -g nx
     npm install
  
