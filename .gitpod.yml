@@ -3,7 +3,7 @@ image:
 
 tasks:
 - command: |
-    npm i -g @angular/cli
+    npm i -g @angular/cli -N
     npm i -g nx
     npm install
  
