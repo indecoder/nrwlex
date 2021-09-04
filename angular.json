@@ -197,9 +197,6 @@
       "style": "scss",
       "linter": "eslint",
       "unitTestRunner": "jest"
-    },
-    "@nrwl/angular:component": {
-      "style": "scss"
     }
   },
   "defaultProject": "tour"
