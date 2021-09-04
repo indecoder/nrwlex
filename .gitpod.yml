@@ -12,3 +12,7 @@ vscode:
     - nrwl.angular-console
     - loiane.angular-extension-pack
     - mikael.angular-beastcode
+    - angular.ng-template,
+    - esbenp.prettier-vscode,
+    - firsttris.vscode-jest-runner,
+    - dbaeumer.vscode-eslint
