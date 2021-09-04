@@ -30,6 +30,9 @@
     "admin": {
       "tags": []
     },
+    "poi": {
+      "tags": []
+    },
     "tour": {
       "tags": []
     },
