@@ -33,6 +33,9 @@
     "tour-e2e": {
       "tags": [],
       "implicitDependencies": ["tour"]
+    },
+    "visitor": {
+      "tags": []
     }
   }
 }
