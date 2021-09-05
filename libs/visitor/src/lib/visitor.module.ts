@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { VisitorComponent } from './visitor.component';
 import { RouterModule } from '@angular/router';
+import { PoiModule } from '@nrwlex/poi';
 
 @NgModule({
   imports: [CommonModule, LayoutModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule,
@@ -16,7 +17,8 @@ import { RouterModule } from '@angular/router';
       path: '',
       component: VisitorComponent
     }
-  ])
+  ]),
+  PoiModule
   ],
   declarations: [VisitorComponent],
 })

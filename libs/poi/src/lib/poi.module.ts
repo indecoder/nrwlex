@@ -9,7 +9,7 @@ import { PoiEffects } from './+state/poi.effects';
   imports: [
     CommonModule,
     StoreModule.forFeature(fromPoi.POI_FEATURE_KEY, fromPoi.reducer),
-    EffectsModule.forFeature([PoiEffects]),
+    EffectsModule.forFeature([PoiEffects])
   ],
 })
 export class PoiModule {}

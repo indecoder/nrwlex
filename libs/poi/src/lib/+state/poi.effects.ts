@@ -5,6 +5,9 @@ import { fetch } from '@nrwl/angular';
 import * as PoiActions from './poi.actions';
 import * as PoiFeature from './poi.reducer';
 
+import { map } from 'rxjs/operators';
+import { PoiService } from '../poi.service';
+
 @Injectable()
 export class PoiEffects {
   init$ = createEffect(() =>
@@ -13,7 +16,10 @@ export class PoiEffects {
       fetch({
         run: (action) => {
           // Your custom service 'load' logic goes here. For now just return a success action...
-          return PoiActions.loadPoiSuccess({ poi: [] });
+          return this.poiService.getAll().pipe(
+            map(pois => PoiActions.loadPoiSuccess({ poi: pois })
+            )
+          )
         },
         onError: (action, error) => {
           console.error('Error', error);
@@ -23,5 +29,5 @@ export class PoiEffects {
     )
   );
 
-  constructor(private readonly actions$: Actions) {}
+  constructor(private readonly actions$: Actions, private poiService: PoiService) {}
 }
