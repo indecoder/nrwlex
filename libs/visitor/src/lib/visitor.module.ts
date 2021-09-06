@@ -9,6 +9,7 @@ import { MatListModule } from '@angular/material/list';
 import { VisitorComponent } from './visitor.component';
 import { RouterModule } from '@angular/router';
 import { PoiModule } from '@nrwlex/poi';
+import { PoiListComponent } from './poi-list/poi-list.component';
 
 @NgModule({
   imports: [CommonModule, LayoutModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule,
@@ -20,6 +21,6 @@ import { PoiModule } from '@nrwlex/poi';
   ]),
   PoiModule
   ],
-  declarations: [VisitorComponent],
+  declarations: [VisitorComponent, PoiListComponent],
 })
 export class VisitorModule {}
